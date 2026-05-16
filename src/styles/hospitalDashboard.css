@@ -1,0 +1,131 @@
+.hospital-container {
+  padding: 20px;
+  background: #f4f7fb;
+  min-height: 100vh;
+  font-family: Arial;
+}
+
+.hospital-header {
+  display: flex;
+  justify-content: space-between;
+  background: #1e3a8a;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.logout-btn {
+  background: red;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #1e3a8a;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: darkgreen;
+}
+ .hospital-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-links button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-links button:hover {
+  background: #ddd;
+  color: black;
+}
+
+.logout {
+  background: red;
+  color: white;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Approved */
+.status.approved {
+  background: #eafaf1;
+  color: #27ae60;
+}
+
+/* Rejected */
+.status.rejected {
+  background: #fdecea;
+  color: #e74c3c;
+}
+
+/* Pending */
+.status.pending {
+  background: #fff8e6;
+  color: #f39c12;
+}
+
