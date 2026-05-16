@@ -231,7 +231,7 @@ This project is developed for educational and learning purposes.
 
 ## Yash Amarjinta
 
-- GitHub: https://github.com/yashamarjinta
+- GitHub: https://github.com/yashamarjinta-afk
 - LinkedIn: https://linkedin.com/in/yashamarjinta
 
 ---
