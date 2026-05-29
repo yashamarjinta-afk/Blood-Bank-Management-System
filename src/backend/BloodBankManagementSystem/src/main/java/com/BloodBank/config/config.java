@@ -15,7 +15,7 @@ public class config {
 		return new WebMvcConfigurer() {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-				.allowedOrigins("http://localhost:5173/")
+				.allowedOrigins("blood-bank-management-system-ldvs-bfn94gnmg.vercel.app")
 				.allowedMethods("GET","POST","DELETE","PUT")
 				.allowedHeaders("*");
 			}
