@@ -29,18 +29,13 @@ public class UserController {
     }
 
     // ================= LOGIN =================
-    @PostMapping(value = "/login", consumes = "multipart/form-data")
-    public ResponseEntity<LoginResponseDTO> login(
-            @RequestParam("email") String email,
-            @RequestParam("password") String password) {
+   @PostMapping("/login")
+public ResponseEntity<LoginResponseDTO> login(
+        @RequestBody LoginRequestDTO request) {
 
-        LoginRequestDTO request = new LoginRequestDTO();
-        request.setEmail(email);
-        request.setPassword(password);
-
-        LoginResponseDTO res = ser.login(request);
-        return ResponseEntity.ok(res);
-    }
+    LoginResponseDTO res = ser.login(request);
+    return ResponseEntity.ok(res);
+}
 
     // ================= SEND OTP =================
     @PostMapping("/forgot-password")
