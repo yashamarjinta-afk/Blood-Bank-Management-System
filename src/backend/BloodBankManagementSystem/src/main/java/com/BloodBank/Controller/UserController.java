@@ -29,11 +29,17 @@ public class UserController {
     }
 
     // ================= LOGIN =================
-   @PostMapping("/login")
+  @PostMapping(value = "/login", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
 public ResponseEntity<LoginResponseDTO> login(
-        @RequestBody LoginRequestDTO request) {
+        @RequestParam("email") String email,
+        @RequestParam("password") String password) {
+
+    LoginRequestDTO request = new LoginRequestDTO();
+    request.setEmail(email);
+    request.setPassword(password);
 
     LoginResponseDTO res = ser.login(request);
+
     return ResponseEntity.ok(res);
 }
 
