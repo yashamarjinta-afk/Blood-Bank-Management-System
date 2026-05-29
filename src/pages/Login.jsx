@@ -42,15 +42,10 @@ const Login = () => {
     formData.append("email", email);
     formData.append("password", password);
 
-   const response = await axios.post(
-  `${API}/user/login`,
-  formData,
-  {
-    headers: {
-      "Content-Type": "multipart/form-data"
-    }
-  }
-);
+  const response = await axios.post(`${API}/user/login`, {
+  email,
+  password
+});
 
     const user = response.data;
 
