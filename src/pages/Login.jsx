@@ -23,7 +23,7 @@ const Login = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const API = "blood-bank-management-system-ldvs-bfn94gnmg.vercel.app";
+  const API = "https://blood-bank-management-system-ldvs.vercel.app";
 
   // ================= LOGIN =================
  const handleLogin = async (e) => {
